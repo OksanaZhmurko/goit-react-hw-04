@@ -9,7 +9,13 @@ const handleClick = () => {
   return (
     <li className={styles.imageCard} onClick={handleClick}>
       <div>
-      <img className={styles.image} src={image.urls.small} alt={image.alt_description} /> 
+      <img
+  className={styles.image}
+  src={image.urls.small}
+  alt={image.alt_description}
+  width="300" 
+  height="300" 
+/>
       </div>
     </li>
   )

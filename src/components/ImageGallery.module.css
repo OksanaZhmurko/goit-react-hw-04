@@ -4,18 +4,12 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    object-fit: cover;
   }
-  
-  .imageGallery {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+
+ 
   .imageGalleryItem {
     width: 25%; /* Каждый элемент галереи будет занимать 25% ширины родительского контейнера */
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
   }
