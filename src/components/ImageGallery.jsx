@@ -2,6 +2,7 @@
 import ErrorMessage from './ErrorMessage'
 import ImageCard from './ImageCard'
 import Loader from './Loader'
+import styles from './ImageGallery.module.css';
 
 const ImageGallery = ({images, isLoading, error, openImageModal}) => {
 
@@ -15,13 +16,16 @@ const ImageGallery = ({images, isLoading, error, openImageModal}) => {
     }
 
 
-  return (
-    <ul>
-      {images.map((image) => (
-        <ImageCard key={image.id} image={image} openImageModal={openImageModal}/>
-      ))}
-    </ul>
-  )
-}
+    return (
+      <ul className={styles.imageGallery}>
+        {images.map(image => (
+          <li key={image.id} className={styles.imageGalleryItem}> 
+            <ImageCard image={image} openImageModal={openImageModal} />
+          </li>
+        ))}
+      </ul>
+    );
+  };
 
+  
 export default ImageGallery
