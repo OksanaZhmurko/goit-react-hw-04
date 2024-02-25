@@ -1,0 +1,20 @@
+.loadMoreBtn{
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .loadMoreBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .loadMoreBtn.is-hidden {
+    display: none;
+  }

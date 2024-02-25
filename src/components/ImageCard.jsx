@@ -8,7 +8,7 @@ const handleClick = () => {
 
   return (
     <li className={styles.imageCard} onClick={handleClick}>
-      <div>
+    <div className={styles.imageContainer}>
       <img
   className={styles.image}
   src={image.urls.small}
