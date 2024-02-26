@@ -7,7 +7,6 @@ import LoadMoreBtn from "./components/LoadMoreBtn"
 import ImageModal from "./components/ImageModal"
 
 
-
 function App() {
 
   const [query, setQuery] = useState('')

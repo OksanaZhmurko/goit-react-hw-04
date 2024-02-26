@@ -1,7 +1,7 @@
 
 import styles from './SearchBar.module.css';
 import { useState } from 'react';
-
+import { toast } from "react-toastify";
 
 const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
@@ -9,7 +9,7 @@ const SearchBar = ({ onSubmit }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     if (query.trim() === '') {
-      alert('Error');
+      toast.error('Please enter a search query');
       return;
     }
     onSubmit(query);
